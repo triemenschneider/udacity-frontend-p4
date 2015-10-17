@@ -14,5 +14,15 @@ Just open `index.html` in a browser. In the following overview select the pizza-
 
 ### ...in main.js
 
-* rewrote `changePizzaSizes()` (line 428)
-* got rid of the background-pizzas altogether (line 514 and below)
+* `"use strict";` (line 21)
+* rewrote `changePizzaSizes()` (line 430)
+* stored `randomPizzas.length` in a variable outside the for-loop (line 449)
+* stored `#randomPizzas`-div in a variable outside the for-loop (line 466)
+* replaced `document.querySelectorAll()` by `document.getElementsByClassName()` (lines 448, 500)
+* stored `document.body.scrollTop / 1250` in a variable outside the for-loop (line 502)
+* dynamically calculating the amount of background-pizzas to fill the screen (line 528)
+
+### ...in style.css
+
+* added `will-change: transform;` to `randomPizzaContainer`-div
+* added `transform: translateZ(0);` to `mover`-image
